@@ -1,4 +1,4 @@
-# COMP3221 A1 Routing Algorithm - Group 9
+# Routing Algorithm
 
 ## Prerequisites
 
@@ -6,9 +6,9 @@ A random undirected graph should be generated prior to running the routing algor
 
 > Assumptions
 >
-> - Every node in the graph is connected to another node with an undirected edge
-> - There does not exist self-loop edges
-> - Every edge has cost of only positive value (float)
+> -   Every node in the graph is connected to another node with an undirected edge
+> -   There does not exist self-loop edges
+> -   Every edge has cost of only positive value (float)
 
 ### Environment
 
@@ -28,7 +28,7 @@ If module not found error occurs like this,
 ```
 John-Doe:ROOT-DIRECTORY johndoe$ python3 generate_graph.py
 Traceback (most recent call last):
-  File "/Users/johndoe/COMP3221/generate_graph.py", line 3, in <module>
+  File "/Users/johndoe/folder/generate_graph.py", line 3, in <module>
     import networkx as nx
 ModuleNotFoundError: No module named 'networkx'
 ```
@@ -92,21 +92,21 @@ The line 1 represents the number of neighbouring nodes, the lines below represen
 
 First and foremost, install any missing packages required to run our program if necessary, which are
 
-- sys
-- socket
-- json
-- time
-- threading
-- heapq
-  Also, make sure your python version is at least 3.7 as our code is likely to be dependent on new implementation of dictionary from python version 3.7 and above where dictionaries started keeping track of order of inserted items.
+-   sys
+-   socket
+-   json
+-   time
+-   threading
+-   heapq
+    Also, make sure your python version is at least 3.7 as our code is likely to be dependent on new implementation of dictionary from python version 3.7 and above where dictionaries started keeping track of order of inserted items.
 
 Open up N many terminals where you can run each of your node and give it commands through their own CLI. If you are to test our program on graph having 10 nodes, you should open up 10 separate terminal tabs.
 
 On each terminal tab, run the following command
-`python3 Comp3221_A1_Routing.py <NODE-ID> <PORT-NO> <Config-File>`
-eg. `python3 Comp3221_A1_Routing.py A 6000 graph/Aconfig.txt`
+`python3 Routing.py <NODE-ID> <PORT-NO> <Config-File>`
+eg. `python3 Routing.py A 6000 graph/Aconfig.txt`
 
-If you think this is too much work, and is happy to give up control on some or most of the nodes, you may opt to execute some or most nodes in background: `python3 Comp3221_A1_Routing.py <NODE-ID> <PORT-NO> <Config-File> &`. However, this is not recommeded by us as you need to manually kill background processes when testing is done.
+If you think this is too much work, and is happy to give up control on some or most of the nodes, you may opt to execute some or most nodes in background: `python3 Routing.py <NODE-ID> <PORT-NO> <Config-File> &`. However, this is not recommeded by us as you need to manually kill background processes when testing is done.
 
 ### Command Line Interface (CLI)
 
